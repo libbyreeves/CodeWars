@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codewars Problems</title>
+</head>
+<body>
+    <h1>Testing Ground for CodeWars</h1>
+    <script>
+        //Convert number to reversed array of digits
+
+        //input is a collection of positive numbers
+        //put it into an array
+        //then order them in reverse order
+    
+    function digitize(n) {
+            let numberString = n.toString();
+            let characterArray = numberString.split('');
+            let numberArray = characterArray.map(Number);
+            let reversedArray = numberArray.reverse();
+            return reversedArray;
+
+        }
+    </script>
+</body>
+</html>
