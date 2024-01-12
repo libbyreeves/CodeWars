@@ -14,14 +14,34 @@
         //put it into an array
         //then order them in reverse order
     
-    function digitize(n) {
-            let numberString = n.toString();
-            let characterArray = numberString.split('');
-            let numberArray = characterArray.map(Number);
-            let reversedArray = numberArray.reverse();
-            return reversedArray;
+    // function digitize(n) {
+    //         let numberString = n.toString();
+    //         let characterArray = numberString.split('');
+    //         let numberArray = characterArray.map(Number);
+    //         let reversedArray = numberArray.reverse();
+    //         return reversedArray;
 
-        }
+    //     }
+
+    //Sentence Smash
+
+    //input is an array of words
+    //return a sentence
+    //make sure there are spaces between words
+
+    function smash(words) {
+            let sentence = ''
+            for (let i = 0; i < words.length; i++) {
+                if (i !== words.length - 1) {
+                    sentence += words[i] + ' '
+                } else {
+                    sentence += words[i]
+                }
+            }
+            return sentence;
+        };
+
+        smash(['hello', 'world', 'this', 'is', 'great']);
     </script>
 </body>
 </html>
