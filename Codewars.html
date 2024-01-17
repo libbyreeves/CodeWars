@@ -29,19 +29,59 @@
     //return a sentence
     //make sure there are spaces between words
 
-    function smash(words) {
-            let sentence = ''
-            for (let i = 0; i < words.length; i++) {
-                if (i !== words.length - 1) {
-                    sentence += words[i] + ' '
-                } else {
-                    sentence += words[i]
-                }
-            }
-            return sentence;
-        };
+    // function smash(words) {
+    //         let sentence = ''
+    //         for (let i = 0; i < words.length; i++) {
+    //             if (i !== words.length - 1) {
+    //                 sentence += words[i] + ' '
+    //             } else {
+    //                 sentence += words[i]
+    //             }
+    //         }
+    //         return sentence;
+    //     };
 
-        smash(['hello', 'world', 'this', 'is', 'great']);
+    //     smash(['hello', 'world', 'this', 'is', 'great']);
+
+    //Rock, Paper, Scissors
+    const rps = (p1, p2) => {
+        let result = "";
+        if (p1 === "scissors") {
+            switch (p2) {
+                case "paper" :
+                    result = "Player 1 won!"
+                    break
+                case "rock" :
+                    result = "Player 2 won!"
+                    break
+                case "scissors" :
+                    result = "Draw!"
+            } 
+        } else if (p1 === "rock") {
+            switch (p2) {
+                case "paper":
+                    result = "Player 2 won!"
+                    break
+                case "rock":
+                    result = "Draw!"
+                    break
+                case "scissors":
+                    result = "Player 1 won!"
+            } 
+        } else {
+            switch (p2) {
+                case "paper":
+                    result = "Draw!"
+                    break
+                case "rock":
+                    result = "Player 1 won!"
+                    break
+                case "scissors":
+                    result = "Player 2 won!"
+            } 
+        }
+        return result
+        };
     </script>
 </body>
 </html>
